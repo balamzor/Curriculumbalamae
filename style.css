@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+* {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.8vh;
+  background: rgb(27, 6, 6);
+  color: aliceblue;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 5vh;
+  width: 500px;
+  text-align: center;
+}
+h2 {
+  font-size: 3vh;
+  text-align: center;
+  text-justify: center;
+}
+h3 {
+  font-size: 2.5vh;
+  margin: 0 0;
+  margin-bottom: 10px;
+  border-bottom: 3px solid aliceblue;
+  padding-bottom: 5px;
+}
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.photo {
+  background: black;
+  filter: grayscale(1);
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 20px 20px;
+  border: solid 3px aliceblue;
+  border-radius: 10px;
+  background: unset;
+  top: 20px;
+  transition: 1000ms ease-in-out;
+}
+.photo:hover {
+  filter: grayscale(0.5);
+  transition: 1000ms ease-in-out;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 20px 0px;
+}
+.about {
+  background: unset;
+  position: relative;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  left: -35px;
+  top: 20px;
+}
+.vertical {
+  position: relative;
+  text-justify: right;
+  width: 130px;
+  height: 20px;
+  background: unset;
+  transform: rotate(-90deg);
+  transform-origin: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  right: 15px;
+  top: -5px;
+  text-align: right;
+  overflow-x: visible;
+  z-index: 10;
+}
+.aboutcontent {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px;
+  border-left: 1px solid aliceblue;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  flex-flow: wrap;
+  column-gap: 50px;
+  margin-top: 10px;
+}
+.formation {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.viticulture,
+.code,
+.restauration {
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  border: 3px solid aliceblue;
+  border-radius: 5px;
+}
+.content-gen {
+  text-align: justify;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border: 3px solid aliceblue;
+  border-radius: 5px;
+}
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
+  margin: 3% 0;
+}
+.bar {
+  position: relative;
+  left: 5%;
+  right: 5%;
+  background: rgb(75, 13, 13);
+  width: 90%;
+  height: 30px;
+  border: 2px solid aliceblue;
+  border-radius: 3px;
+}
+.barfill1,
+.barfill2,
+.barfill3,
+.barfill4 {
+  position: relative;
+  background: rgb(27, 6, 6);
+  width: 0%;
+  height: 29px;
+  top: -31px;
+  left: 5.5%;
+  right: 4.5%;
+  margin-top: 2px solid aliceblue;
+  margin-bottom: 2px solid aliceblue;
+}
+.barfill1 {
+  animation: grow1 3s forwards;
+}
+.barfill2 {
+  animation: grow2 3s forwards;
+}
+.barfill3 {
+  animation: grow3 3s forwards;
+}
+.barfill4 {
+  animation: grow4 3s forwards;
+}
+.bartitle {
+  position: relative;
+  background: unset;
+  font-weight: bold;
+  top: -57px;
+  left: 12%;
+}
+.skillcontent {
+  position: relative;
+  top: -30px;
+  text-align: justify;
+  margin: 0 5%;
+  height: 10px;
+}
+
+@keyframes grow1 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes grow2 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes grow3 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes grow4 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 30%;
+  }
+}
